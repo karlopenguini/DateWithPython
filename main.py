@@ -35,7 +35,18 @@ def WhereIsLove():
     return
 
 def ValentinesChocolates():
-    return
+    array = input().split()
+    choco = [int(x) for x in array]
+    extraChoco = int(input())
+    maxChoco = max(choco)
+    result = []
+    for i in range(len(choco)):
+	    if choco[i]+extraChoco >= maxChoco:
+		    result.append(True)
+	    else:
+		    result.append(False)
+    result = [str(x) for x in result]
+    print(" ".join(result).lower())
 
 def LoveLetters():
     return
