@@ -14,22 +14,22 @@ def Palindrome():
 	x = int(input())
 
 
-    for i in range(x):
-		
+	for i in range(x):
+
 		a = input().replace(" ", "").lower()
-	    b = ""
-	
-	    for letter in a:
-			b = letter + b
-	
-	
-	    if a == b:
-			print("Palindrome")
-		
-	    else:
-			print("Not Palindrome")
-     
-    return
+		b = ""
+
+	for letter in a:
+		b = letter + b
+
+
+	if a == b:
+		print("Palindrome")
+
+	else:
+		print("Not Palindrome")
+
+	return
 
 def WhereIsLove():
     return
@@ -41,7 +41,7 @@ def LoveLetters():
     return
 
 def FLAMES():
-    def compare(name1, name2):
+	def compare(name1, name2):
 		for i in name1:
 			if i in name2:
 				name1 = name1.replace(i, "")
