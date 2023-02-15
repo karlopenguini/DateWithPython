@@ -2,7 +2,10 @@ def LineUpDAte():
     N = int(input('Input N: '))
     X = int(input('Input X: '))
     answer = N % X
-    print(f"{answer} couples have not availed the discount")
+    if answer == 0:
+        print('I love Python!')
+    else:
+        print(f"{answer} couples have not availed the discount")
 
 def LoveHistogram():
     n = int(input())
