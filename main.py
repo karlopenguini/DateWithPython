@@ -10,23 +10,22 @@ def LoveHistogram():
             bar = bar + char
         print(bar)
         
-def Palindrome():
-    x = int(input())
+def Palindrome():x = int(input())
 
 
     for i in range(x):
-	    a = input().replace(" ", "").lower()
+		
+		a = input().replace(" ", "").lower()
 	    b = ""
 	
 	    for letter in a:
-		    b = letter + b
+			b = letter + b
 	
 	
 	    if a == b:
-		    print("Palindrome")
 		
 	    else:
-            print("Not Palindrome")
+		print("Not Palindrome")
      
     return
 
