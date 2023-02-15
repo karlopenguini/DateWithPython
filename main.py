@@ -11,6 +11,24 @@ def LoveHistogram():
         print(bar)
         
 def Palindrome():
+	x = int(input())
+
+
+    for i in range(x):
+		
+		a = input().replace(" ", "").lower()
+	    b = ""
+	
+	    for letter in a:
+			b = letter + b
+	
+	
+	    if a == b:
+			print("Palindrome")
+		
+	    else:
+			print("Not Palindrome")
+     
     return
 
 def WhereIsLove():
@@ -23,6 +41,25 @@ def LoveLetters():
     return
 
 def FLAMES():
+    flames = {1: "Friends", 2: "Lovers",
+		3: "Affectionate", 4: "Marriage",
+		0: "Enemies",} 
+
+
+    name1 = input().replace(" ", "").lower()
+
+    name2 = input().replace(" ", "").lower()
+
+
+    for i in name1:
+        if i in name2:
+            name1 = name1.replace(i, "")
+            name2 = name2.replace(i, "")
+
+
+    length = len(name1) + len(name2)
+    print(length, flames[length % 5])
+    
     return
 
 def DDayAtValentines():
