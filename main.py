@@ -11,7 +11,7 @@ def LoveHistogram():
         print(bar)
         
 def Palindrome():
-	x = int(input())
+    x = int(input())
 
 
 	for i in range(x):
@@ -64,11 +64,9 @@ def FLAMES():
 		0: "Enemies",} 
 		
 	name1, name2 = nameInput()
+    length = compare(name1, name2)
 	
-	length = compare(name1, name2)
-	
-	
-	print(length, flames[length % 5])
+    print(length, flames[length % 5])
 	
 	return
 
