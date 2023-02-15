@@ -20,7 +20,22 @@ def ValentinesChocolates():
     return
 
 def LoveLetters():
-    return
+    s = input()
+    k = 7
+
+    new_s = []
+    for character in s:
+        if character.isalpha():
+            new_character = ord(character) - k
+            if character.isupper() and new_character < ord("A"):
+                new_character += 26
+            elif character.islower() and new_character < ord("a"):
+                new_character += 26
+            new_s.append(chr(new_character))
+        else:
+            new_s.append(character)
+
+    print("".join(new_s))
 
 def FLAMES():
     return
