@@ -1,5 +1,12 @@
 def LineUpDAte():
-    return
+    N = int(input('Input N: '))
+    X = int(input('Input X: '))
+    answer = N % X
+    if answer == 0:
+        print('I love Python!')
+    else:
+        print(f"{answer} couples have not availed the discount")
+
 def LoveHistogram():
     n = int(input())
     bars = list(map(int,input().split()))
