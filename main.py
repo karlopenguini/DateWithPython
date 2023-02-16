@@ -39,6 +39,29 @@ def Palindrome():
     return
 
 def WhereIsLove():
+    inputCoord = input()
+    def solve(inputCoord):
+        posX = 0 
+        posY = 0
+        for let in inputCoord:
+            if let == "U":           
+                posY += 1
+            elif let == "D":
+            posY -= 1
+            elif let == "L":
+                posX -= 1
+            elif let == "R":
+                posX += 1
+
+            if let == "G":
+                posX = 0
+                posY = 0
+            elif let == "V":
+                return (posX, posY)
+        return(posX, posY)
+
+    x,y = solve(inputCoord)
+    print(x, y)
     return
 
 def ValentinesChocolates():
